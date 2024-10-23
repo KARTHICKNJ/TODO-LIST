@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(297deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 90, 1) 44%, rgba(0, 212, 255, 1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.todo-container {
+    background-color: #ffffff3f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 15px 70px -1px rgba(0,0,0,0.75);
+    width: 400px;
+    max-width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Add Task Section */
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dddddd56;
+    border-radius: 4px;
+    background-color: #f9f9f94f;
+}
+
+.add-task button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #10a585;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #06443a;
+}
+
+/* Task Columns */
+.task-columns {
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pending-tasks,
+.completed-tasks {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Task Item */
+.task-item {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%; /* Ensures full width of task item */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.task-item span {
+    flex: 1;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Buttons for Complete and Delete */
+button.complete {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button.complete:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
